@@ -73,6 +73,8 @@ Félicitation, votre entité est maintenant fonctionnelle.
 
 > Ajoutez quelques lignes de fake données dans votre BDD pour pouvoir effectuer des tests.
 
+> Vous pouvez utiliser le bundle [DoctrineFixturesBundle](https://symfony.com/doc/current/bundles/DoctrineFixturesBundle/index.html)
+
 Le but maintenant est de créer 2 nouvelles actions dans notre controller.
 (1 route = 1 action = 1 view)
 
@@ -80,3 +82,14 @@ Le but maintenant est de créer 2 nouvelles actions dans notre controller.
 - Une action 'showArticleAction($id)' qui affiche un seul élément en fonction d'un paramètre dans l'URL (findOneBy)
 
 L'accès à l'élément seul doit se faire depuis un clic sur un élément de la liste.
+
+### Update et Delete
+
+- Créez une action permettant de modifier un objet sur la route /article/edit/{id}
+- Créez une action permettant de supprimer un objet sur la route /article/delete/{id}
+
+### Classement et sélection
+
+- Modifiez l'action listArticleAction pour permettre de classer les articles selon plusieurs critères en fonction de la route (Ordre alphabétique du titre, ordre chronologique de création, ...)
+
+- Modifiez l'action listArticleAtion pour permettre de filtrer selon plusieurs critères en fonction de la route (ex: uniquement les articles créés après le 01/01/2019) 
