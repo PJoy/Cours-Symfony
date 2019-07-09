@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class LuckyController extends AbstractController
 {
     /**
-     * @Route("/lucky/number/{max}")
+     * @Route("/lucky/number/{max}", name="lucky_number")
      */
     public function numberAction($max = 100)
     {

@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class BlogController extends AbstractController
 {
     /**
-     * @Route("/blog/{_locale}/{year}/{title}", requirements={"_locale" = "en|fr", "year"="\d\d\d\d", "title"="[a-zA-Z0-9-]*"})
+     * @Route("/blog/{_locale}/{year}/{title}", name="blog_display", requirements={"_locale" = "en|fr", "year"="\d\d\d\d", "title"="[a-zA-Z0-9-]*"})
      * @Route("/blog/{year}/{title}", requirements={"year"="\d{4}", "title"="[a-zA-Z0-9-]*"})
      */
     public function blogAction($_locale = 'fr', $year, $title)
