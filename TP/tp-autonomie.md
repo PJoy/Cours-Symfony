@@ -8,7 +8,7 @@ Le but est d'implémenter un maximum des fonctionnalités suivantes. Les fonctio
 
 * Admin
   * créer l'entité Product, au coeur de votre projet
-  * créer une ou plusieurs entités en relation avec la première, du type `Category`, `Tag`, `Media`, `Comment`...
+  * créer une ou plusieurs entités en relation avec la première, du type `Category` (relation one to many), `Tag` (relation many to many), `Media`, `Comment`...
   * ( gestion en admin (index/show/new/update/delete) de ces entités via des formulaires )
   * ( pour l'Article/Product, ajout d'un champ de texte riche avec CKEditor )
   * ( pour l'Article/Product, possibilité d'upload une image )
