@@ -1,0 +1,7 @@
+{% extends("layout.html.twig") %}
+
+{% block content %}
+    {% for article in articles %}
+        <a href="{{ path('show_article', {'id': article.id}) }}">{{ article.title }}</a>
+    {% endfor %}
+{% endblock content %}
